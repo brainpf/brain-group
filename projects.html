@@ -230,15 +230,18 @@
                     Projects in Progress
                 </h1>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    This page lists ongoing projects at Brain group. New projects will be added over time.
+                    Current projects at Brain group.
                 </p>
             </div>
 
             <!-- Projeto: Financial-Crime Detection -->
             <div class="project-card">
                 <h2 class="text-2xl md:text-3xl font-semibold text-harvard-crimson">
-                    Integrating Expert Knowledge into Small Models for Financial-Crime Detection
+                    Integrating expert knowledge into small models for financial-crime detection
                 </h2>
+                <p class="text-sm text-gray-500 mb-4">
+                    <span class="font-semibold">Researchers:</span> Dr. Lindeberg Pessoa Leite
+                </p>
                 <p class="text-gray-700 mt-2">
                     Financial crime is among the criminal activities that move the largest volumes of money, making it a central priority for law-enforcement agencies and financial-intelligence units. In this context, the Bank Transaction Investigation System (SIMBA) serves as the reference setting: SIMBA is the Brazilian bank-transaction investigation standard that organizes the secure transfer of banking data between financial institutions and public bodies after judicial authorization to lift bank secrecy.
                 </p>
@@ -250,15 +253,15 @@
                     <ol>
                         <li>
                             <strong>Step 1 — Synthetic SIMBA.</strong>
-                            Due to the sensitivity of real records, all experiments are conducted on a simulator calibrated to produce SIMBA-like CSV data (Altman et al., 2023). On top of these files, a compact set of fraudulent typologies (e.g., structuring/smurfing, pass-through chains, layering) is programmatically injected to obtain labelled examples.
+                            Due to the sensitivity of real records, all experiments are conducted on a simulator calibrated to produce SIMBA-like csv data (Altman et al., 2023). On top of these files, a compact set of fraudulent typologies (e.g., structuring/smurfing, pass-through chains, layering) is programmatically injected to obtain labelled examples.
                         </li>
                         <li>
                             <strong>Step 2 — Knowledge Graph and Provenance.</strong>
-                            From the SIMBA CSV files, a knowledge graph (KG) of accounts, people, agencies, and relations is constructed. The KG resolves identities, supports incremental updates, exposes multi-hop structures for visualization, and maintains pointers to original SIMBA rows and keys. Model outputs (pattern-specific scores and final decisions) are attached to KG nodes and edges, enabling end-to-end inspection from each decision back to the CSV records (Rashkin et al., 2023).
+                            From the SIMBA csv files, a knowledge graph (KG) of accounts, people, agencies, and relations is constructed. The KG resolves identities, supports incremental updates, exposes multi-hop structures for visualization, and maintains pointers to original SIMBA rows and keys. Model outputs (pattern-specific scores and final decisions) are attached to KG nodes and edges, enabling end-to-end inspection from each decision back to the csv records (Rashkin et al., 2023).
                         </li>
                         <li>
                             <strong>Step 3 — Pattern adapters.</strong>
-                            Using KG-derived features, a base graph neural network is first trained on fraud-versus-non-fraud labels to capture structural and statistical patterns of criminal behaviour. The encoder is then frozen and, for each fraud typology, a lightweight adapter and classification head are attached. Adapter activations are recorded as pattern-specific signals on the KG, allowing each decision to be decomposed into contributing patterns and traced back to the corresponding nodes, edges, and CSV rows (Pfeiffer et al., 2021; Nature StructIE, 2024; Li et al., 2024).
+                            Using KG-derived features, a base graph neural network is first trained on fraud-versus-non-fraud labels to capture structural and statistical patterns of criminal behaviour. The encoder is then frozen and, for each fraud typology, a lightweight adapter and classification head are attached. Adapter activations are recorded as pattern-specific signals on the KG, allowing each decision to be decomposed into contributing patterns and traced back to the corresponding nodes, edges, and csv rows (Pfeiffer et al., 2021; Nature StructIE, 2024; Li et al., 2024).
                         </li>
                     </ol>
                 </div>
