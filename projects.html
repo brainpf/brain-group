@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos – Grupo SIA</title>
+    <title>SynSimba – Grupo SIA</title>
     
     <!-- Meta Tags -->
-    <meta name="description" content="" />
+    <meta name="description" content="SynSimba: base sintética brasileira compatível com o Simba para ampliar a pesquisa em lavagem de dinheiro e a aplicação de inteligência artificial de estado da arte." />
     <link rel="canonical" href="https://groupsia.github.io/grupo-sia/projects.html" />
-    <meta property="og:title" content="Projetos – grupo SIA" />
+    <meta property="og:title" content="SynSimba – Grupo SIA" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://groupsia.github.io/grupo-sia/assets/preview.png" />
 
@@ -231,36 +231,49 @@
                 </h1>
             </div>
 
-            <!-- Projeto: Financial-Crime Detection -->
+            <!-- Projeto: SynSimba -->
             <div class="project-card">
                 <h2 class="text-2xl md:text-3xl font-semibold text-harvard-crimson">
-                     Um Método Auditável para Investigações de Lavagem de Dinheiro
+                    SynSimba: base sintética brasileira compatível com o Simba
                 </h2>
                 <p class="text-sm text-gray-500 mb-4">
-                  <!--  <span class="font-semibold">Researchers:</span> Dr. Lindeberg Pessoa Leite -->
+                    <!-- <span class="font-semibold">Pesquisador:</span> Dr. Lindeberg Pessoa Leite -->
                 </p>
+
                 <p class="text-gray-700 mt-2">
-                    Crimes financeiros estão entre as atividades criminosas associadas aos maiores volumes de fluxos financeiros ilícitos, o que os torna uma prioridade central para órgãos policiais e unidades de inteligência financeira. Nesse contexto, o Sistema de Investigação de Movimentações Bancárias (SIMBA) é utilizado para organizar a transferência segura de dados bancários entre instituições financeiras e autoridades de persecução penal, mediante autorização judicial para a quebra de sigilo bancário.
+                    O Sistema de Investigação de Movimentações Bancárias (Simba) é uma infraestrutura estratégica para o recebimento, o processamento e a análise de dados bancários em procedimentos oficiais de afastamento de sigilo, sendo utilizado por órgãos como a Polícia Federal e o Ministério Público no combate à lavagem de dinheiro.
                 </p>
+
                 <p class="text-gray-700 mt-2">
-                    Atualmente, investigações baseadas no SIMBA dependem de consultas ad hoc em grafos ou filtros baseados em regras que são difíceis de manter, não generalizam bem entre casos e oferecem auditabilidade limitada no nível de decisão. Somado a isso, a alta sensibilidade dos dados bancários do SIMBA dificulta soluções em nuvem pública, criando a necessidade de sistema que rodem na infraestrutura local da Polícia Federal.
+                    Entretanto, a sensibilidade e as restrições legais associadas às bases reais limitam seu uso em pesquisas acadêmicas, na reprodução de experimentos e na comparação de métodos computacionais. Além disso, as bases sintéticas públicas atualmente disponíveis refletem, em grande parte, contextos financeiros e regulatórios estrangeiros, reduzindo sua aderência à realidade brasileira.
                 </p>
+
+                <p class="text-gray-700 mt-2">
+                    Nesse contexto, o SynSimba propõe uma base sintética brasileira compatível com o leiaute Simba, combinando atividade transacional regular, fontes públicas nacionais e padrões suspeitos derivados de normativos de Prevenção à Lavagem de Dinheiro. A base permitirá ampliar a pesquisa em lavagem de dinheiro no Brasil, especialmente ao viabilizar o desenvolvimento, o treinamento e a avaliação de técnicas de inteligência artificial de estado da arte em um ambiente controlado, reproduzível e juridicamente seguro.
+                </p>
+
                 <p class="text-gray-700">
-                    Neste projeto, o método é estruturado em duas etapas:
+                    A arquitetura do projeto é organizada nas seguintes etapas:
                 </p>
 
                 <div class="project-steps">
-                    <ol>
-                        <ul class="steps-list">
-                           <li>
-                                <strong>Etapa 1 — Grafo de conhecimento com proveniência.</strong>
-                                Arquivos TXT do SIMBA são transformados em um grafo de conhecimento (contas, pessoas, agências, transações) projetado para auditabilidade: cada entidade e relação mantém ponteiros para as linhas/chaves de origem no SIMBA, permitindo rastreabilidade em nível da evidência.
-                            </li>
-                            <li>
-                                <strong>Etapa 2 — Detectando estruturas investigativas.</strong>
-                                O sistema seleciona estruturas investigativas relevantes no grafo a partir de dimensões topológicas, temporais e financeiras das transações, apresentando, de forma explicável, as evidências que sustentam cada estrutura detectada.
-                            </li>
-                        </ul>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Geração sintética.</strong>
+                            Um motor de geração produz entidades, contas, instituições, transações e padrões controlados. O Tide é adotado como motor inicial, mantendo-se a possibilidade de integração futura de outros geradores.
+                        </li>
+                        <li>
+                            <strong>Adaptação ao contexto brasileiro.</strong>
+                            Normativos do Banco Central orientam o leiaute e os padrões suspeitos, enquanto fontes públicas nacionais parametrizam a atividade transacional regular.
+                        </li>
+                        <li>
+                            <strong>Materialização no padrão Simba.</strong>
+                            Os dados sintéticos são convertidos para os arquivos TXT utilizados no ecossistema Simba, preservando o formato original de disponibilização e análise.
+                        </li>
+                        <li>
+                            <strong>Benchmark de modelos.</strong>
+                            A base sintética materializada é utilizada no treinamento, no teste e na comparação de modelos de detecção de atividades suspeitas. Em etapa complementar, os modelos serão avaliados em casos reais da Polícia Federal.
+                        </li>
                     </ol>
                 </div>
             </div>
