@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SynSimba – TRACE AI</title>
+    <title>Projetos – TRACE AI</title>
     
     <!-- Meta Tags -->
-    <meta name="description" content="SynSimba: base sintética brasileira compatível com o Simba para ampliar a pesquisa em lavagem de dinheiro e a aplicação de inteligência artificial de estado da arte." />
-    <link rel="canonical" href="https://groupsia.github.io/grupo-sia/projects.html" />
-    <meta property="og:title" content="SynSimba – Trace AI" />
+    <meta name="description" content="Projetos de pesquisa do TRACE-AI em inteligência artificial rastreável para investigações, incluindo NL2Rules e SynSimba." />
+    <link rel="canonical" href="https://traceable-ai.github.io/trace-ai/projects.html" />
+    <meta property="og:title" content="Projetos – TRACE AI" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://groupsia.github.io/grupo-sia/assets/preview.png" />
+    <meta property="og:image" content="https://traceable-ai.github.io/trace-ai/assets/preview.png" />
 
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -231,8 +231,9 @@
                 </h1>
             </div>
 
-            <!-- Projeto: SynSimba -->
-            <div class="project-card">
+
+<!-- Projeto: SynSimba -->
+            <div class="project-card mb-8">
                 <h2 class="text-2xl md:text-3xl font-semibold text-harvard-crimson">
                     SynSimba: base sintética brasileira compatível com o Simba
                 </h2>
@@ -291,7 +292,65 @@
                     Prof. Luis Rocha <span class="text-gray-400">(Ghent University)</span>
                 </div>
             </div>
-        </div>
+
+            <!-- Projeto: NL2Rules -->
+            <div class="project-card">
+                <h2 class="text-2xl md:text-3xl font-semibold text-harvard-crimson">
+                    NL2Rules: de requisitos em linguagem natural a regras executáveis
+                </h2>
+
+                <p class="text-gray-700 mt-2">
+                    Regras usadas em processos de validação costumam estar descritas em documentos voltados à leitura humana, como normas, políticas, manuais e requisitos de sistemas. Para automatizar essas verificações, é necessário transformar essas orientações em regras que possam ser aplicadas de forma consistente por um sistema. Embora modelos de linguagem possam ajudar nessa tarefa, pedir que a IA interprete o requisito e gere diretamente a regra executável pode fazer com que um entendimento incorreto do texto seja incorporado ao resultado final
+                    (<a href="https://doi.org/10.1109/ICSE55347.2025.00108" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Tian et al., 2025</a>).
+                </p>
+
+                <p class="text-gray-700 mt-2">
+                    O NL2Rules propõe separar essas duas etapas. Primeiro, um modelo de linguagem interpreta o requisito e o representa de forma estruturada, registrando elementos como condições, consequências, exceções e conceitos do domínio. Em seguida, um componente determinístico transforma essa representação em regras executáveis. Essa separação é consistente com trabalhos recentes que utilizam estruturas intermediárias ou pipelines modulares antes da geração do artefato executável
+                    (<a href="https://aclanthology.org/2024.tacl-1.73/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Mordechai et al., 2024</a>;
+                    <a href="https://arxiv.org/abs/2603.15799" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Gupta &amp; Sreenivasamurthy, 2026</a>).
+                    Dessa forma, a IA é utilizada para compreender e organizar o conteúdo expresso em linguagem natural, enquanto a geração da regra que será efetivamente executada segue um processo previsível e verificável.
+                </p>
+
+                <p class="text-gray-700 mt-2">
+                    Na aplicação das regras, o item que será validado também é representado de forma estruturada e comparado com as regras produzidas. O resultado da validação pode, assim, indicar não apenas se o item atende aos requisitos, mas também quais regras foram aplicadas e quais informações sustentaram a conclusão. O objetivo é tornar a transformação de requisitos em validações automatizadas mais confiável, reproduzível e rastreável.
+                </p>
+
+                <p class="text-gray-700">
+                    A abordagem do projeto é organizada nas seguintes etapas:
+                </p>
+
+                <div class="project-steps">
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Interpretação dos requisitos.</strong>
+                            Regras descritas em linguagem natural são analisadas por um modelo de linguagem para identificar as condições, restrições, consequências e exceções relevantes.
+                        </li>
+                        <li>
+                            <strong>Representação estruturada.</strong>
+                            O conteúdo identificado é organizado em uma representação intermediária padronizada, independente da linguagem usada posteriormente para executar as regras.
+                        </li>
+                        <li>
+                            <strong>Geração determinística das regras.</strong>
+                            A representação estruturada é convertida por um componente determinístico em regras executáveis, evitando que a IA gere diretamente o código responsável pela validação.
+                        </li>
+                        <li>
+                            <strong>Validação e rastreabilidade.</strong>
+                            As regras são aplicadas aos dados do item avaliado para produzir o resultado da validação e as evidências que permitem verificar como a conclusão foi obtida.
+                        </li>
+                        <li>
+                            <strong>Avaliação experimental.</strong>
+                            O método será comparado com a geração direta de regras por modelos de linguagem, considerando confiabilidade, correção dos resultados e consistência entre diferentes execuções.
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Pesquisador -->
+                <div class="mt-6 pt-4 border-t border-gray-200 text-sm text-gray-500 leading-relaxed">
+                    <span class="font-medium text-gray-600">Pesquisador:</span>
+                    Dr. Lindeberg Leite
+                </div>
+            </div>
+</div>
     </div>
 
     <!-- JS para menu mobile -->
