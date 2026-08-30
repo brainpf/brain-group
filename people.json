@@ -9,54 +9,7 @@
     "type": "group_leader"
   },
 
-  "members": [
-    {
-      "name": "Ricardo Penck Benazzi",
-      "role": "Perito Criminal Federal",
-      "website": "",
-      "google_scholar": "",
-      "linkedin": "",
-      "photo": "benazi.jpg",
-      "type": "member"
-    },
-    {
-      "name": "M.Sc. Roberto Zaina",
-      "role": "Agente de Polícia Federal",
-      "website": "",
-      "google_scholar": "",
-      "linkedin": "",
-      "photo": "zaina.jpg",
-      "type": "member"
-    },
-    {
-      "name": "M.Sc. Jairo Brandão de Santana",
-      "role": "Agente de Polícia Federal",
-      "website": "",
-      "google_scholar": "",
-      "linkedin": "",
-      "photo": "jairo.jpg",
-      "type": "member"
-    }
-  ],
+  "members": [],
 
-  "current": [
-    {
-      "name": "Prof. Dr. Felipe Campelo",
-      "role": "Associate Professor of Data Science – University of Bristol",
-      "website": "https://research-information.bris.ac.uk/en/persons/felipe-campelo/",
-      "google_scholar": "https://scholar.google.com/citations?user=jKGZEXIAAAAJ&hl=pt-BR",
-      "linkedin": "https://uk.linkedin.com/in/felipe-campelo-60653049",
-      "photo": "felipe.jpg",
-      "type": "external_collaborator"
-    },
-    {
-      "name": "Dr. Teofilo Emidio de Campos",
-      "role": "Senior Applied Scientist – Microsoft Applied Sciences Group",
-      "website": "https://teodecampos.github.io/",
-      "google_scholar": "https://scholar.google.com/citations?user=dMZCMp0AAAAJ&hl=pt-BR",
-      "linkedin": "https://uk.linkedin.com/in/teofilo",
-      "photo": "teo.jpg",
-      "type": "external_collaborator"
-    }
-  ]
+  "current": []
 }
