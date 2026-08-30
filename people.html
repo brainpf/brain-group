@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo SIA - Pessoas </title>
+    <title>TRACE-AI - Pessoas </title>
 
     <!-- Meta Tags -->
     <meta name="description"
           content="" />
     <link rel="canonical"
-          href="https://groupsia.github.io/grupo-sia/people.html" />
-    <meta property="og:title" content="Pessoas – Grupo SIA" />
+          href="https://traceable-ai.github.io/trace-ai/people.html" />
+    <meta property="og:title" content="Pessoas – TRACE-AI" />
     <meta property="og:type" content="website" />
     <meta property="og:image"
-          content="https://groupsia.github.io/grupo-sia/assets/preview.png" />
+          content="https://traceable-ai.github.io/trace-ai/assets/preview.png" />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -151,7 +151,7 @@
 
         <div class="text-lg title-font font-normal tracking-tight">
             <a href="index.html">
-                <span class="text-harvard-crimson">Grupo</span> SIA
+                <span class="text-harvard-crimson">TRACE</span> AI
             </a>
         </div>
 
@@ -248,7 +248,7 @@
             <h2 class="text-3xl mb-6">Líder</h2>
             <div id="principal-investigator-container" class="space-y-6"></div>
         </section>
-
+        <!--
         <section class="mt-12">
             <h2 class="text-3xl mb-6">Membros</h2>
             <div id="members-container" class="space-y-6"></div>
@@ -258,7 +258,7 @@
             <h2 class="text-3xl mb-6">Colaboradores Externos</h2>
             <div id="external-collaborators-container" class="space-y-6"></div>
         </section>
-
+        -->
     </div>
 </div>
 
@@ -308,7 +308,7 @@ function createPersonCard(person) {
 
     if (person.photo) {
         photo = document.createElement('img');
-        photo.src = `https://groupsia.github.io/grupo-sia/profile-pics/${person.photo}`;
+        photo.src = `https://traceable-ai.github.io/trace-ai/profile-pics/${person.photo}`;
         photo.alt = person.name;
         photo.className = 'w-20 h-20 rounded-full object-cover flex-shrink-0';
     } else {
