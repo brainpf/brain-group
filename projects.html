@@ -300,21 +300,20 @@
                 </h2>
 
                 <p class="text-gray-700 mt-2">
-                    Muitas aplicações reais de software e processos organizacionais envolvem validação: documentos, registros ou outros artefatos precisam ser verificados quanto ao cumprimento de regras descritas em requisitos, políticas, normas ou manuais. Automatizar esse tipo de verificação exige transformar regras escritas para interpretação humana em uma forma que possa ser executada de modo sistemático e consistente
-                    <a href="https://arxiv.org/abs/2603.15799" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Gupta &amp; Sreenivasamurthy, 2026</a>).
-                    Embora modelos de linguagem possam apoiar essa transformação, gerar diretamente a regra executável a partir do texto pode fazer com que uma interpretação incorreta do requisito seja incorporada ao resultado final
+                    Muitas aplicações reais envolvem validação: documentos, registros ou outros artefatos precisam ser verificados contra regras descritas em requisitos, políticas, normas ou manuais. Automatizar essas verificações exige transformar regras escritas para interpretação humana em uma forma executável e consistente
+                    (<a href="https://arxiv.org/abs/2603.15799" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Gupta &amp; Sreenivasamurthy, 2026</a>).
+                    Embora modelos de linguagem possam apoiar essa transformação, gerar diretamente a regra executável pode fazer com que uma interpretação incorreta do requisito seja incorporada ao resultado final
                     (<a href="https://doi.org/10.1109/ICSE55347.2025.00108" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Tian et al., 2025</a>).
                 </p>
 
                 <p class="text-gray-700 mt-2">
-                    O NL2Rules propõe separar essas duas etapas. Primeiro, um modelo de linguagem interpreta o requisito e o representa de forma estruturada, registrando elementos como condições, consequências, exceções e conceitos do domínio. Em seguida, um componente determinístico transforma essa representação em regras executáveis. Essa separação é consistente com trabalhos recentes que utilizam estruturas intermediárias ou pipelines modulares antes da geração do artefato executável
+                    O NL2Rules separa interpretação e execução. Primeiro, um modelo de linguagem transforma o requisito em uma representação estruturada, registrando condições, restrições e exceções. Depois, um componente determinístico converte essa representação em regras executáveis. Essa estratégia segue trabalhos que empregam representações intermediárias ou pipelines modulares antes da geração do artefato final
                     (<a href="https://aclanthology.org/2024.tacl-1.73/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Mordechai et al., 2024</a>;
                     <a href="https://arxiv.org/abs/2603.15799" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Gupta &amp; Sreenivasamurthy, 2026</a>).
-                    Dessa forma, a IA é utilizada para compreender e organizar o conteúdo expresso em linguagem natural, enquanto a geração da regra que será efetivamente executada segue um processo previsível e verificável.
                 </p>
 
                 <p class="text-gray-700 mt-2">
-                    Na aplicação das regras, o item que será validado também é representado de forma estruturada e comparado com as regras produzidas. O resultado da validação pode, assim, indicar não apenas se o item atende aos requisitos, mas também quais regras foram aplicadas e quais informações sustentaram a conclusão. O objetivo é tornar a transformação de requisitos em validações automatizadas mais confiável, reproduzível e rastreável.
+                    Na validação, o item analisado é representado de forma estruturada e verificado contra as regras produzidas. O resultado registra quais regras foram aplicadas e quais informações sustentaram a conclusão, favorecendo confiabilidade e rastreabilidade.
                 </p>
 
                 <p class="text-gray-700">
@@ -325,23 +324,23 @@
                     <ol class="steps-list">
                         <li>
                             <strong>Interpretação dos requisitos.</strong>
-                            Regras descritas em linguagem natural são analisadas por um modelo de linguagem para identificar as condições, restrições, consequências e exceções relevantes.
+                            O modelo identifica condições, restrições e exceções presentes no texto.
                         </li>
                         <li>
                             <strong>Representação estruturada.</strong>
-                            O conteúdo identificado é organizado em uma representação intermediária padronizada, independente da linguagem usada posteriormente para executar as regras.
+                            As informações extraídas são organizadas em um formato intermediário padronizado.
                         </li>
                         <li>
                             <strong>Geração determinística das regras.</strong>
-                            A representação estruturada é convertida por um componente determinístico em regras executáveis, evitando que a IA gere diretamente o código responsável pela validação.
+                            Um componente determinístico converte essa representação em regras executáveis.
                         </li>
                         <li>
                             <strong>Validação e rastreabilidade.</strong>
-                            As regras são aplicadas aos dados do item avaliado para produzir o resultado da validação e as evidências que permitem verificar como a conclusão foi obtida.
+                            As regras são aplicadas aos dados do item avaliado, registrando resultado e evidências.
                         </li>
                         <li>
                             <strong>Avaliação experimental.</strong>
-                            O método será comparado com a geração direta de regras por modelos de linguagem, considerando confiabilidade, correção dos resultados e consistência entre diferentes execuções.
+                            O método é comparado com a geração direta de regras por modelos de linguagem.
                         </li>
                     </ol>
                 </div>
